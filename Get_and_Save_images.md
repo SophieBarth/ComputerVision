@@ -32,6 +32,12 @@ Thus the path is "test_images_input" and "test_images_output" (which I have defi
 
 The first part of the function contains going to the folder and going through each file "filename" with a for loop. 
 Then opening the file with cv2.imread and storing it in the variable img.
+
+cv2.imread(filename) <br>
+os.path.join(path, filename) <br>
+Combined: <br>
+cv2.imread(os.path.join(path, filename)) <br>
+
 If a copy of the image was stored in img (not None), you can start transforming the image.
 
 ```
@@ -50,10 +56,10 @@ def load_save_images(folder_in, folder_out):
 
 When the transformed image was returned, it's time to store it into the output folder.
 
-cv2.imwrite(filename, image)
-os.path.join(path, filename)
-Combined:
-cv2.imwrite(os.path.join(path, filename), image)
+cv2.imwrite(filename, image) <br>
+os.path.join(path, filename) <br>
+Combined: <br>
+cv2.imwrite(os.path.join(path, filename), image)<br>
 
 The variable folder_out contains the path to the directory. 
 Changing the filename to a string, which already entails the format '.jpg' and adding the prefix 'out_' gives the output name. 
