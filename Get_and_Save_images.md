@@ -1,7 +1,7 @@
 # How to automatically open and save images from and to a directory in Python
-## Using cv2.imwrite | cv2.imread | os.path.join
+## Using cv2.imread | cv2.imwrite | os.path.join
 
-If you are working on computer vision projects you might want to try them out on several images while working on the parameters.
+If you are working on computer vision projects, you might want to test them on several images while working on the parameters.
 To automate opening and saving images from and into directories, the OpenCV and OS packages are very helpful and easy to use. 
 
 ### Import OpenCV and Miscellaneous operating system interfaces
