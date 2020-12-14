@@ -1,0 +1,11 @@
+# Loading and saving images from and into different directories in Python
+## Using CV2 imwrite|imread and OS path.join
+
+If you are working on computer vision projects you might want to try them out on several images while working on the parameters.
+To automate opening and saving images from and into directories, the OpenCV and OS packages are very helpful and easy to use. 
+
+### Import the two libraries
+`import cv2`
+`import os`
+
+### Define the path relative to the location of your program
