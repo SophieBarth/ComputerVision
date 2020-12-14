@@ -16,13 +16,13 @@ as well as, [Miscellaneous operating system interfaces](https://docs.python.org/
 ### Define the path relative to the location of your program
 
 With *os.path.join(path, filename)* the path has to be defined in relation to the python file location.
-In my case, the python file and the image in and out directories are all inside one directory called ComputerVision. <br>
+In my case, the python file and the image directories (input and output) are alltogether inside of one directory, called ComputerVision. <br>
 ComputerVision:<br>
 -images.py<br>
 -test_images_input<br>
 -test_images_output<br>
 
-Thus the path is "test_images_input" and "test_images_output" (which I have defined in main). <br>
+Thus the path is "test_images_input" and "test_images_output" (which I have defined in main), stored in two variables. <br>
 ```
  folder_in = "test_images_input"
  folder_out = "test_images_output"
@@ -30,7 +30,7 @@ Thus the path is "test_images_input" and "test_images_output" (which I have defi
 
 ### Load and store images
 
-The first part of the function contains going to the folder and going thrugh each file "filename" with a for loop. 
+The first part of the function contains going to the folder and going through each file "filename" with a for loop. 
 Then opening the file with cv2.imread and storing it in the variable img.
 If a copy of the image was stored in img (not None), you can start transforming the image.
 
